@@ -6,7 +6,7 @@ This is a typst template for reproducing papers of American Institute of Physics
 
 You can use this template with typst web app by simply clicking on "Start from template" on the dashboard and searching for `aloecius-aip`.
 
-For local usage, you can use the typst CLI by invoking the follwing command
+For local usage, you can use the typst CLI by invoking the following command
 
 ```
 typst init @preview/aloecius-aip
@@ -55,13 +55,21 @@ The preamble or the header of the document should be written in the following wa
 Example:
 (
   "Author Name": (
-    "affiliation": "affil-1",
+    "affiliation": "affiliation-label",
     "email": "author.name@example.com", // Optional
     "address": "Mail address",  // Optional
     "name": "Alias Name", // Optional
     "cofirst": false // Optional, identify whether this author is the co-first author
     )
 )
+```
+- `affiliations` : Dictionary of affiliations where keys are affiliations labels and values are affiliations addresses, and example usage is as follows
+
+```
+Example:
+ (
+    "affiliation-label": "Institution Name, University Name, Road, Post Code, Country"
+ )
 ```
 
 - `abstract` : Abstract of the paper
